@@ -1,0 +1,7 @@
+vendor
+.idea
+composer.lock
+var/cache/*
+var/logs/*
+var/proxies/*
+deploy

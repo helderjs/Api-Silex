@@ -1,0 +1,23 @@
+<phpunit bootstrap="bootstrap.php"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false">
+
+    <selenium>
+        <!--browser name="Internet Explorer" browser="*iexplore" /-->
+        <browser name="Firefox" browser="*firefox" />
+        <browser name="Google Chrome" browser="*googlechrome " />
+    </selenium>
+
+    <testsuites>
+        <testsuite name="API-Silex">
+            <directory>API/Test/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
